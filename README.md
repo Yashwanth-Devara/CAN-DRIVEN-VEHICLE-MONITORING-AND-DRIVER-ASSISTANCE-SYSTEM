@@ -1,5 +1,4 @@
-# CAN_DRIVEN_VEHICLE_MONITORING_AND_DRIVER_ASSISTANCE_SYSTEM
-To develop a multi-node distributed embedded system using CAN bus communication to perform real-time vehicle parameter monitoring (fuel, temperature) and provide driver assistance features (reverse distance safety alerts, indicator controls).
+
 
 <div align="center">
 
