@@ -230,7 +230,8 @@ Power ON → Each Node initializes CAN1 peripheral (125 kbps, C1BTR config)
 ## 🏗️ System Architecture & Workflow
 
 <p align="center">
-  <img src="Transparent Embedded System CAN Bus Diagram.png" alt="CAN Bus Embedded System Architecture" width="100%" />
+  <img width="1536" height="1024" alt="Transparent Embedded System CAN Bus Diagram" src="https://github.com/user-attachments/assets/e8c5efcc-7052-4861-9586-9bd5ffebf053" />
+
 </p>
 
 ### Network Summary
