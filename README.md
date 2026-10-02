@@ -41,7 +41,11 @@ Built using three independent **NXP LPC2129 ARM7TDMI-S** microcontrollers, the s
 | 🖥️ **Custom Character LCD Interface** | Custom CGRAM icons for indicators and dynamic 4-stage fuel tank graphics |
 
 ---
+## 🏗️ System Architecture & Workflow
 
+<p align="center">
+  <img src="Transparent Embedded System CAN Bus Diagram.png" alt="CAN Bus Embedded System Architecture" width="100%" />
+</p>
 ## 🚦 Driver Assistance & Warning Logic
 
 ### 1️⃣ Reverse Distance Thresholds
