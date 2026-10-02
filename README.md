@@ -41,11 +41,7 @@ Built using three independent **NXP LPC2129 ARM7TDMI-S** microcontrollers, the s
 | 🖥️ **Custom Character LCD Interface** | Custom CGRAM icons for indicators and dynamic 4-stage fuel tank graphics |
 
 ---
-## 🏗️ System Architecture & Workflow
 
-<p align="center">
-  <img src="Transparent Embedded System CAN Bus Diagram.png" alt="CAN Bus Embedded System Architecture" width="100%" />
-</p>
 ## 🚦 Driver Assistance & Warning Logic
 
 ### 1️⃣ Reverse Distance Thresholds
@@ -231,7 +227,16 @@ Power ON → Each Node initializes CAN1 peripheral (125 kbps, C1BTR config)
 - Sounds buzzer pulses at threshold-dependent intervals.
 
 ---
+## 🏗️ System Architecture & Workflow
 
+<p align="center">
+  <img src="Transparent Embedded System CAN Bus Diagram.png" alt="CAN Bus Embedded System Architecture" width="100%" />
+</p>
+
+### Network Summary
+* **1. Fuel Node (LPC2129):** Reads analog fuel sensor voltage via ADC (CH0), scales it to $0–100\%$, displays locally, and broadcasts CAN frame `ID = 1`.
+* **2. Ultrasonic / Reverse Node (LPC2129):** Measures distance in cm using HC-SR04 ultrasonic sensor, triggers reverse alerts, and broadcasts CAN frame `ID = 2`.
+* **3. Main Node (LPC2129):** Reads dual DS18B20 1-Wire temperature sensors, processes incoming CAN frames (`ID 1` and `ID 2`), handles direction/turn interrupts, and updates the central LCD dashboard display.
 ## 🧮 Mathematical Formulas
 
 ### 1️⃣ CAN Baud Rate Generation (125 kbps)
