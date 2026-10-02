@@ -1,0 +1,24 @@
+#define lcd_data 8
+#define lcd_rs 16
+#define lcd_rw 18
+#define lcd_en 17
+#define clear_lcd 0x01
+#define ret_cur_right 0x02
+#define shift_cur_right 0x06
+#define shift_cur_left 0x07
+#define dsp_off 0x08
+#define dsp_on_cur_off 0x0c
+#define dsp_on_cur_on 0x0e
+#define dsp_on_cur_blk 0x0f
+#define shift_dsp_right 0x14
+#define shift_dsp_left 0x10
+#define mode_8bit_1line 0x30
+#define mode_4bit_1line 0x20
+#define mode_8bit_2line 0x38
+#define mode_4bit_2line 0x28
+//assuming 2x16 16x2 lcd pannel
+#define goto_line1_pos0 0x80
+#define goto_line2_pos0 0xc0
+#define goto_line3_pos0 0x94
+#define goto_line4_pos0 0xd4
+#define goto_cgram_start 0x40
